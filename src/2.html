@@ -1,0 +1,49 @@
+<html>
+<body>
+hiiii
+<script>
+
+let a={    "name":"Sagar", "age":23, "DOB":6/9/2005,
+    "address":{"area_name":"Manish nagar","Plot_No":28},
+    "hobbies":["Dancing","Singing","Horseriding","Reading"],
+    "cities":{"Mp":["Chhindwada","Bhopal","Ujjain"],
+             "Rajasthan":["Jaypur","Udaypur"]}
+
+}
+
+  // b={    "name":"Rahul", "age":23, "DOB":6/9/2005,
+   // "address":{"area_name":"Manish nagar","Plot_No":28},
+   // "hobbies":["Dancing","Singing","Horseriding","Reading"],
+    ////"cities":{"Mp":["Chhindwada","Bhopal","Ujjain"],
+      //       "Rajasthan":["Jaypur","Udaypur"]}
+
+
+
+console.log(a)
+console.log(a.name)
+console.log(a.age)
+//console.log(b)
+
+//let b={...a}
+b.name="Rahul";
+console.log(b.name);
+console.log(a.name)
+
+
+let b=JSON.parse(JSON.stringify(a));
+console.log(b)
+console.log(b.name);
+console.log(a.name);
+b.address.city="Wardha";
+console.log(b.address.city)
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
